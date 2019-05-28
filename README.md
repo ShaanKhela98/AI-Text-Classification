@@ -1,7 +1,7 @@
 # AI-Text-Classification
 Implementation of machine learning algorithms to process text data.
 
-To run the program: python3 <Train Data> <Test Data> <function>
+To run the program: python3 farm-ads-train farm-ads-test "function"
 
 Functions: tf - uses the training data to determine term frequencies for each word in the training set
            tfgrep - classifies a document based on the most discriminating term

@@ -1,7 +1,7 @@
 # AI-Text-Classification
 Implementation of machine learning algorithms to process text data.
 
-To run the program: python3 farm-ads-train farm-ads-test "function"
+To run the program: python3 classify.py farm-ads-train farm-ads-test "function"
 
 Functions:
           

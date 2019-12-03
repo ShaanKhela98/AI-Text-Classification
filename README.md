@@ -14,7 +14,7 @@ Functions:
           
           mnb - implements the multinomial naive bayes model to predict the most likely class
           
-          ![DHT11 Sensor](/mnb.png)
+          ![Multinomial naive bayes matrix](/mnb.png)
           
           df - computes the document frequency for each termin the training set
           

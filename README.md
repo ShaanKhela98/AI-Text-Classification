@@ -16,6 +16,6 @@ Functions:
           
           df - computes the document frequency for each termin the training set
           
-          nb - implements the multivariate Bernoulli model topredict the most likely class. 
+          nb - implements the multivariate Bernoulli model to predict the most likely class. 
           
           mine - modified mnb function to limit complexity of model by recalculating term frequency, eliminate 50/50 split results, and construct confusion matrix  

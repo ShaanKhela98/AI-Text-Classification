@@ -34,6 +34,6 @@ Functions:
    ![Mulivariate Bernoulli model](/nb.png)
   
    
-   mine - modified mnb function to limit complexity of model by recalculating term frequency, eliminate 50/50 split results, and construct confusion matrix  
+   mine - self constructed to modify mnb function to limit complexity of model by recalculating term frequency, eliminate 50/50 split results, and construct confusion matrix  
    ![Personal function](/mine.png)
 

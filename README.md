@@ -15,7 +15,7 @@ Functions:
    ![Term Frequency classifying most discriminating](/mnb.png)
    
    
-   priors - computes the class priors for the training set and then classifies a document using 0-R             
+   priors - computes the class and classifies a document using 0-R             
    
    ![0-R Classification](/priors.png)
 
@@ -25,7 +25,7 @@ Functions:
    ![Multinomial naive bayes matrix](/mnb.png)
           
    
-   df - computes the document frequency for each termin the training set
+   df - computes the document frequency for each term in the training set
    
    ![Document Frequency](/df.png)
 

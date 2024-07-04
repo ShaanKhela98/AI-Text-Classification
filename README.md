@@ -3,6 +3,8 @@ Implementation of machine learning algorithms to process text data.
 
 To run the program: python3 classify.py farm-ads-train farm-ads-test "function"
 
+Assignment --> ps7.pdf
+
 Functions:
           
    tf - uses the training data to determine term frequencies for each word in the training set

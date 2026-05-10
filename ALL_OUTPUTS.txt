@@ -1,0 +1,94 @@
+Output Commands
+
+python3 classify.py farm-ads-train.txt farm-ads-test.txt tf
+python3 classify.py farm-ads-train.txt farm-ads-test.txt df
+python3 classify.py farm-ads-train.txt farm-ads-test.txt tfgrep
+python3 classify.py farm-ads-train.txt farm-ads-test.txt priors
+python3 classify.py farm-ads-train.txt farm-ads-test.txt mnb
+python3 classify.py farm-ads-train.txt farm-ads-test.txt nb
+python3 classify.py farm-ads-train.txt farm-ads-test.txt mine
+
+===== Results =====
+Data: farm-ads-train.txt
+Class Label: 0
+{'list': 12858, 'product': 9657, 'com': 5736, 'pet': 5038, 'save': 4835}
+
+Class Label: 1
+{'disease': 4731, 'treatment': 3958, 'health': 3016, 'pain': 2565, 'home': 2542}
+
+===== Results =====
+Data: farm-ads-train.txt
+Class Label: 0
+{'home': 0.6301282051282051, 'privacy': 0.5365384615384615, 'contact': 0.5147435897435897, 'com': 0.4935897435897436, 'product': 0.4782051282051282}
+
+Class Label: 1
+{'contact': 0.6488439306358381, 'home': 0.596820809248555, 'information': 0.536849710982659, 'treatment': 0.5115606936416185, 'privacy': 0.49277456647398843}
+
+===== tfgrep result ======
+Data:  farm-ads-train.txt
+Most discriminating term: list
+
+*** Confusion Matrices ***
+TP   FN  | 435 264
+FP   TN  | 1125 1120
+
+===== tfgrep result ======
+Data:  farm-ads-test.txt
+Most discriminating term: list
+
+*** Confusion Matrices ***
+TP   FN  | 181 117
+FP   TN  | 469 432
+
+===== PRIORS Result ======
+Data:  farm-ads-train.txt
+*** Confusion Matrices ***
+TP   FN  | 1560 1384
+FP   TN  | 0 0
+
+===== PRIORS Result ======
+Data:  farm-ads-test.txt
+*** Confusion Matrices ***
+TP   FN  | 650 549
+FP   TN  | 0 0
+
+===== MNB Result ======
+Data:  farm-ads-train.txt
+*** Confusion Matrices ***
+TP   FN  | 1484 71
+FP   TN  | 76 1313
+
+===== MNB Result ======
+Data:  farm-ads-test.txt
+*** Confusion Matrices ***
+TP   FN  | 577 84
+FP   TN  | 73 465
+
+===== NB Result ======
+Data:  farm-ads-train.txt
+*** Confusion Matrices ***
+TP   FN  | 1269 67
+FP   TN  | 291 1317
+
+===== NB Result ======
+Data:  farm-ads-test.txt
+*** Confusion Matrices ***
+TP   FN  | 490 73
+FP   TN  | 160 476
+
+The changes in my implementation focus on reducing false negatives and false positives.
+I modified the multinomial Naive Bayes model by using a reduced vocabulary.
+The reduced vocabulary removes terms that appear equally often in both class labels because those words add complexity without helping the classifier separate the two classes.
+This keeps the model simpler while still using discriminating terms for prediction.
+
+===== MINE / Reduced MNB Result ======
+Data:  farm-ads-train.txt
+*** Confusion Matrices ***
+TP   FN  | 1485 74
+FP   TN  | 75 1310
+
+===== MINE / Reduced MNB Result ======
+Data:  farm-ads-test.txt
+*** Confusion Matrices ***
+TP   FN  | 577 85
+FP   TN  | 73 464

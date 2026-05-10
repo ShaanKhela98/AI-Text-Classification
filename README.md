@@ -83,7 +83,6 @@ The `tf` function counts how often each word appears in each class.
 | pain | 2565 |
 | home | 2542 |
 
-![Term Frequency Output](tf.png)
 
 ## Document Frequency Output
 
@@ -109,7 +108,6 @@ The `df` function computes the probability that a document from each class conta
 | treatment | 0.5115606936416185 |
 | privacy | 0.49277456647398843 |
 
-![Document Frequency Output](df.png)
 
 ## TFGREP Results
 
@@ -131,7 +129,6 @@ Most discriminating term: `list`
 | Actual Class 0 | TP = 181 | FN = 117 |
 | Actual Class 1 | FP = 469 | TN = 432 |
 
-![TFGREP Output](tfgrep.png)
 
 ## Priors Results
 
@@ -151,7 +148,6 @@ The `priors` function uses a 0-R majority-class baseline.
 | Actual Class 0 | TP = 650 | FN = 549 |
 | Actual Class 1 | FP = 0 | TN = 0 |
 
-![Priors Output](priors.png)
 
 ## Multinomial Naive Bayes Results
 
@@ -171,7 +167,6 @@ The `mnb` function implements Multinomial Naive Bayes with Laplacian smoothing.
 | Actual Class 0 | TP = 577 | FN = 84 |
 | Actual Class 1 | FP = 73 | TN = 465 |
 
-![MNB Output](mnb.png)
 
 ## Multivariate Bernoulli Naive Bayes Results
 
@@ -191,7 +186,6 @@ The `nb` function implements Multivariate Bernoulli Naive Bayes with Laplacian s
 | Actual Class 0 | TP = 490 | FN = 73 |
 | Actual Class 1 | FP = 160 | TN = 476 |
 
-![NB Output](nb.png)
 
 ## Custom Reduced-Vocabulary Classifier
 
@@ -215,7 +209,6 @@ In the corrected version, `mine` performs similarly to the standard Multinomial 
 | Actual Class 0 | TP = 577 | FN = 85 |
 | Actual Class 1 | FP = 73 | TN = 464 |
 
-![Mine Output](mine.png)
 
 ## Notes on Fixes
 

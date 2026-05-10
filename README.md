@@ -1,6 +1,6 @@
 # AI Text Classification
 
-Python implementation of multiple text classification methods for CS 440 Problem Set 7.
+Python implementation of multiple text classification methods.
 
 This project classifies farm advertisement text using term frequency, document frequency, baseline classification, Multinomial Naive Bayes, Multivariate Bernoulli Naive Bayes, and a custom reduced-vocabulary classifier.
 
@@ -21,7 +21,6 @@ Each line in the dataset contains one labeled document. The first value is the c
 | `classify.py` | Main Python script containing all classifier functions |
 | `farm-ads-train.txt` | Training dataset |
 | `farm-ads-test.txt` | Testing dataset |
-| `ps7.pdf` | Assignment instructions |
 | `README.md` | Project documentation |
 | `ALL_OUTPUTS.txt` | Full command output from the corrected version |
 | `tf.csv` | Generated term-frequency output |
